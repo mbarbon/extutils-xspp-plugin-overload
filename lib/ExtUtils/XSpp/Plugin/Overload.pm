@@ -143,7 +143,8 @@ sub _compare_function {
 
     # arbitrary order for functions with the same name, assuming they
     # will be guarded with different #ifdefs
-    return $a <=> $b if $a->perl_name eq $b->perl_name;
+    return $a <=> $b if $a->perl_name eq $b->perl_name &&
+                        $a->cpp_name ne $a->perl_name;
 
     my ($ca, $cb) = (0, 0);
 
