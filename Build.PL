@@ -11,6 +11,10 @@ my $build = Module::Build->new
       { 'perl'           => '5.8.3',
         'ExtUtils::XSpp' => '0.18',
         },
+    build_requires =>
+      { 'Test::Base'          => '0',
+        'Test::Differences'   => '0',
+        },
     share_dir   => 'cpp',
     );
 $build->create_build_script;
