@@ -4,4 +4,5 @@ cpp/overload.cpp
 cpp/overload.h
 lib/ExtUtils/XSpp/Plugin/Overload.pm
 t/001_load.t
+t/010_base.t
 t/lib/XSP/Test.pm
